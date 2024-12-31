@@ -1,6 +1,8 @@
-function App() {
+import Navbar from "./components/Navbar";
+const App = () => {
   return (
     <div className="flex flex-col h-[100vh] p-10">
+      <Navbar />
       <div className="flex justify-center items-center text-[24px] font-heading uppercase">
         <span className="border-sky-100">What are you felling?</span>
       </div>
@@ -54,6 +56,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
