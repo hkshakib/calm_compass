@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 
-const Modal = ({ isOpen, onClose, title, children }) => {
+const Modal = ({ isOpen, onClose, title, children, color }) => {
   if (!isOpen) return null;
 
   return (
@@ -11,7 +11,8 @@ const Modal = ({ isOpen, onClose, title, children }) => {
       />
       <div className="flex min-h-full items-center justify-center p-4">
         <div
-          className="w-full h-[500px] transform overflow-hidden rounded-lg bg-white p-6 text-left shadow-xl transition-all"
+          className="w-full h-[500px] transform overflow-hidden rounded-lg p-6 text-left shadow-xl transition-all"
+          style={{ backgroundColor: `${color}` }}
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title"

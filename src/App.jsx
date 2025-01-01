@@ -6,6 +6,7 @@ import { mentalStates } from "./data/mentalStates";
 const App = () => {
   const [selectedState, setSelectedState] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [color, setColor] = useState("");
 
   const handleStateClick = (state) => {
     setSelectedState(state);
@@ -13,12 +14,12 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen p-10">
+    <div className="flex flex-col min-h-screen pl-10 pr-10 pt-10 bg-[#f2f4f8]">
       <Navbar />
 
-      <main className="flex-grow p-10 md:p-10">
+      <main className="flex-grow pl-10 pr-10 md:p-10">
         <div className="flex justify-center items-center text-2xl font-heading uppercase mb-10">
-          <span className="border border-sky-100 p-4 rounded-lg shadow-sm">
+          <span className="p-4 rounded-lg shadow-sm">
             What are you feeling?
           </span>
         </div>
@@ -29,7 +30,10 @@ const App = () => {
               key={index}
               className={`h-24 border hover:border-blue-500 transition-colors rounded-lg shadow-sm hover:shadow-md`}
               style={{ backgroundColor: state.color }}
-              onClick={() => handleStateClick(state)}
+              onClick={() => {
+                handleStateClick(state);
+                setColor(state.color);
+              }}
             >
               {state.name}
             </button>
@@ -41,6 +45,7 @@ const App = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title={selectedState?.name || ""}
+        color={color}
       >
         {selectedState && (
           <div className="space-y-4">
