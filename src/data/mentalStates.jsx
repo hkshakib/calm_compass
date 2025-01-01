@@ -12,6 +12,7 @@ export const mentalStates = [
         "5 daily prayers",
         "Deep breathing while saying 'Hasbunallah wa ni'mal wakeel'",
       ],
+      
     },
   },
   {
