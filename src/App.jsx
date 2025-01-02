@@ -59,6 +59,10 @@ const App = () => {
               </p>
             </div>
             <div className="space-y-2">
+              <p className="font-semibold">Hadith Cure:</p>
+              <p className="text-gray-700">{selectedState.content.hadith}</p>
+            </div>
+            <div className="space-y-2">
               <p className="font-semibold">Recommended Practices:</p>
               <ul className="list-disc pl-5 text-gray-700">
                 {selectedState.content.practices.map((practice, index) => (
