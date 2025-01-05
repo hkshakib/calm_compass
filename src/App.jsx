@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="p-5 border">
+    <div className="bg-[#FFFAF9]">
       <Navbar />
       <Landing />
     </div>
