@@ -14,9 +14,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen pl-10 pr-10 pt-10 bg-[#f2f4f8]">
-      {/* <Navbar /> */}
-
+    <div className="flex flex-col min-h-screen pl-10 pr-10 pt-8 bg-[#f2f4f8]">
       <main className="flex-grow pl-10 pr-10 md:p-10">
         <div className="flex justify-center items-center text-2xl font-heading uppercase mb-10">
           <span className="p-4 rounded-lg shadow-sm">

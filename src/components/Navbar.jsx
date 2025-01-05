@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-5 border-b divide-x-2">
+    <nav className="flex justify-between items-center p-5 border-b divide-x-2 sticky top-0 z-10000 mb-10">
       <span className="text-[24px] uppercase line-clamp-4 leading-1 text-bold font-heading">
         Calm Compass
       </span>

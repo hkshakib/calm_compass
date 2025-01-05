@@ -7,6 +7,7 @@ const App = () => {
     <div className="bg-[#FFFAF9]">
       <Navbar />
       <Landing />
+      <Home /> 
     </div>
   );
 };
